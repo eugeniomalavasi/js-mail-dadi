@@ -7,17 +7,18 @@ sendBtn.addEventListener("click", function () {
     console.log(userValue);
 
     let answer;
-    for (let i = 0; i < mailList.length; i++)
+    let i = 0
+    // for (let i = 0; i < mailList.length; i++)
         if (userValue === mailList[i]) {
             answer = "utente registrato";
-            document.getElementById("answer_out").innerHTML = answer;      
-            console.log(answer);
         } else {
-            answer = "utente non registrato";
-            document.getElementById("answer_out").innerHTML = answer;
+            answer = "non registrato";
         }
+        document.getElementById("answer_out").innerHTML = answer; 
+        console.log(answer);
 })
 
+// userInput = prompt("mail")
 // for (let i = 0; i < mailList.length; i++)
 // if (userInput === mailList[i]) {
 //     alert("utente registrato");
