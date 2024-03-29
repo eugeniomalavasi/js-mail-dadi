@@ -4,12 +4,13 @@ console.log(laborDays);
 // console.log(holyDays);
 
 
-for (let i = 0; i < 7; i++) {
-    if (i < 5) {
-        console.log(laborDays[i],"feriali");
-    } else if (i < laborDays.length && i >= 5) {
-        console.log(laborDays[i], "festivi");
-    }
+for (let i = 0; i < 31; i++) {
+    if (i < laborDays.length) {
+        console.log(i, laborDays[i],"feriali");
+    } else if (i >= (laborDays.length)) {
+        i = ;
+        console.log(i, laborDays[i], "festivi");
+    }  
 }
 
 
