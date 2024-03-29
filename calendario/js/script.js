@@ -4,12 +4,13 @@ const holyDays = ["sabato", "domenica"]
 console.log(holyDays);
 
 
-for (let i = 1; i <= 31; i++) {
-    if (i < laborDays) {
-
+for (let i = 0; i < 6; i++) {
+    if (i < laborDays.length) {
+        console.log(laborDays[i],"feriali");
+    } else if (i > laborDays.length) {
+        i = 0;
+        console.log(holyDays[i], "festivi");
     }
-    console.log(i);
-
 }
 
 
@@ -17,11 +18,5 @@ for (let i = 1; i <= 31; i++) {
 
 
 
-// dobbiamo stampare il calendario di Marzo
-// ci sono 31 posti da riempire
-// la settimana è divisa in giorni feriali e festivi
-// bisogna partire dal venerdì
-// mettere i giorni festivi
-// stampare i giorni feriali
-// e di nuovo i giorni festivi
+
 
